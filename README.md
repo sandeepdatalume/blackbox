@@ -181,23 +181,26 @@ If you don't want to install globally, use `npx` in your MCP config:
 
 ## Add to your CLAUDE.md / AGENTS.md
 
-For Claude Code, Codex, or any agent that reads project instructions, add this to your `CLAUDE.md` or `AGENTS.md`:
+Copy the instructions from **[KNOWLEDGE.md](KNOWLEDGE.md)** into your project's `CLAUDE.md`, `AGENTS.md`, or system prompt. This teaches your agent:
+
+- How to search and read the wiki before answering questions
+- How to ingest new sources and create wiki pages
+- How to cross-link, update the index, and maintain quality
+- When to file decisions as analysis pages
+
+Or just copy the quick version:
 
 ```markdown
-## Knowledge Base
+## Knowledge Base (Blackbox)
 
-This project has a Blackbox knowledge base at `/path/to/my-research`.
+This project has a Blackbox knowledge base. Before answering domain questions,
+call `read_index` → `search` → `read_page` to find relevant wiki pages.
 
-Before answering questions about the domain, use the `read_index` MCP tool to see what's available,
-then use `search` and `read_page` to find relevant information.
-
-When you learn something new (from a URL, conversation, or decision), use `fetch_source` to save it
-and then create/update wiki pages following the rules in `schema.md`.
-
-Always update `index.md` and `log.md` after writing wiki pages.
+When you learn something new, call `fetch_source` to save it, then create/update
+wiki pages following schema.md rules. Always update index.md and append to log.md.
 ```
 
-This tells your agent to use the knowledge base as its memory.
+See [KNOWLEDGE.md](KNOWLEDGE.md) for the full version with all workflows.
 
 ---
 
