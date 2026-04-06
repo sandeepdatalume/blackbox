@@ -62,6 +62,9 @@ RAG retrieves chunks. Blackbox understands your knowledge.
 # Install
 npm install -g blackbox-mcp
 
+# Or zero-install
+npx blackbox-mcp init
+
 # Create a knowledge base
 mkdir my-research && cd my-research
 blackbox init
