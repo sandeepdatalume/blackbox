@@ -28,6 +28,18 @@ Your knowledge base is a folder of `.md` files. The LLM is the intelligence laye
 
 ---
 
+## Demo
+
+### CLI — All commands working
+
+![Blackbox CLI Demo](demo-cli.gif)
+
+### Claude Code + MCP — One URL → 11 interlinked wiki pages
+
+![Blackbox MCP Demo](demo-mcp.gif)
+
+---
+
 ## Why not RAG?
 
 | | RAG Pipeline | Blackbox |
