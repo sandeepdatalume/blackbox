@@ -1,0 +1,8 @@
+src/
+.github/
+tests/
+tsconfig.json
+CONTRIBUTING.md
+CHANGELOG.md
+.npmignore
+.gitignore

@@ -1,0 +1,56 @@
+{
+  "name": "blackbox-mcp",
+  "version": "0.1.0",
+  "description": "Karpathy-style personal knowledge wiki as an MCP server. No database, no embeddings — just markdown files and an LLM.",
+  "type": "module",
+  "author": "Sandeep Mehta",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandeepme/blackbox"
+  },
+  "homepage": "https://github.com/sandeepme/blackbox#readme",
+  "bugs": {
+    "url": "https://github.com/sandeepme/blackbox/issues"
+  },
+  "bin": {
+    "blackbox": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "knowledge-base",
+    "wiki",
+    "llm",
+    "markdown",
+    "model-context-protocol",
+    "karpathy",
+    "personal-knowledge"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@mozilla/readability": "^0.5.0",
+    "commander": "^13.1.0",
+    "linkedom": "^0.18.9",
+    "express": "^5.1.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
+}
