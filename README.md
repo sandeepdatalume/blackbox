@@ -4,6 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/sandeepme/blackbox)](https://github.com/sandeepme/blackbox)
 
+> ⚠️ **Vibe-coded.** This project was built in one session with Claude Code as the co-pilot. It works, it's tested, but it's fresh. Expect rough edges. PRs welcome.
+
 **A personal knowledge wiki that your LLM maintains for you.**
 
 No database. No embeddings. No vector store. Just markdown files and an LLM that reads, writes, and interlinks them — the way Karpathy imagined.
