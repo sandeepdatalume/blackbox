@@ -59,14 +59,14 @@ RAG retrieves chunks. Blackbox understands your knowledge.
 ## Quickstart
 
 ```bash
-# Install
-npm install -g blackbox-mcp
-
-# Or zero-install
-npx blackbox-mcp init
+# Clone and build
+git clone https://github.com/sandeepdatalume/blackbox.git
+cd blackbox
+npm install && npm run build
+npm link  # makes 'blackbox' available globally
 
 # Create a knowledge base
-mkdir my-research && cd my-research
+mkdir ~/my-research && cd ~/my-research
 blackbox init
 
 # Ingest a source (saves to raw/, extracts content)
